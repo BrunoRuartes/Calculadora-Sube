@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (tarjetaActual === 3) {
                 // Cambio mensajes
-                document.getElementById('textoInformativo').innerHTML = "¿Precio de la sube?" + '<hr>';
+                document.getElementById('textoInformativo').innerHTML = "¿Precio de la sube?";
                 document.getElementById('textoInformativoExtra').innerHTML = "Sin comas ni nada, y en el debido caso, redondear (preferentemente para arriba, asi presupuestás de más y no de menos";
                 // leer y almacenar precio de coso
                 precioSube = document.getElementById('precioSube').value;
