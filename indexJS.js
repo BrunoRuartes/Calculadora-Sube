@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Si la tarjetaActual es menor que 0, va a la última
         if (tarjetaActual < 0) {
-            tarjetaActual = tarjetas.length - 1;
+            tarjetaActual = tarjetas.length - 2;
             // Deshabilita el botón Atras en la primera tarjeta
             botonAtras.disabled = true;
         } else {
