@@ -294,7 +294,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Añade la fila final al cuerpo de la tabla
                 tbody.appendChild(trFinal);
-
+                document.getElementById('btnAtras').disabled = true;
+                document.getElementById('btnSiguiente').disabled = true;
             }
 
             if (tarjetaActual === 4) {
