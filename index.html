@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/calcSubeIco.jpg">
+    <link rel="stylesheet" href="/indexCSS.css">
+    <script src="/indexJS.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <title>Calculadora de SUBE</title>
+</head>
+
+<body class="bg-black body">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-dark text-light border-bottom border-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="/img/calcSubeIco.jpg" alt="Logo" width="40" height="40"
+                    class="d-inline-block align-text-top rounded-circle border-primary border"></a>
+            <button class="navbar-toggler botonNavBar border border-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color: white;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active text-light fs-4 itemNavBar" aria-current="page"
+                        href="/index.html"><h4>Home</h4></a>
+                    <a class="nav-link text-light fs-4 itemNavBar" href="#"><h4>Info</h4></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BIENVENIDA -->
+    <div class="bienvenida">
+        <br>
+        <div class="mx-auto p-2 card border border-primary">
+            <div class="card-body fs-5">
+                <h3 id="textoInformativo">Ingresá las materias que estás haciendo y su frecuencia semanal</h3>
+                <p id="textoInformativoExtra" style="font-size: smaller; color: rgb(187, 187, 187);">Ej.: Si curso Fisica lunes y miercoles entonces ingreso: <i>Fisica</i> y <i>2</i></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DATOS IN -->
+    <div>
+        <br>
+<!--        
+        <div class="mx-auto p-2 card border border-primary cartaMostrada">
+            <div class="card-body fs-5">
+                <p>¿Cuantas materias estás cursando?</p>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">N°</span>
+                    <input id="cantidadMaterias" type="number" class="form-control" placeholder="Materias" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+            </div>
+        </div>
+-->
+
+        <div class="mx-auto p-2 card border border-primary cartaMostrada">
+            <div class="card-body fs-5">
+                <p id="nombreMateria">¿Como se llama la materia que estás cursando?</p>
+                <div class="input-group mb-3">
+                    <input id="inputNomMat" type="text" class="form-control bg-dark text-white placeholder-blanco" placeholder="Nombre de materia" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <br>
+                <p id="textoCantVecMat">¿Cuantas veces a la semana tenés tu materia?</p>
+                <div class="input-group mb-3">
+                    <input id="inputCantVecMat" type="number" class="form-control bg-dark text-white placeholder-blanco" placeholder="Cantidad" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <p style="font-size: small; color: green;" id="textoCanVecMatMostrar"></p>
+                <button id="btnAgregar" class="btn btn-outline-light">Agregar otra +</button>
+            </div>
+        </div>
+
+
+        <div class="mx-auto p-2 card border border-primary cartaMostrada">
+            <div class="card-body fs-5">
+                <p id="mensajeViajes"></p>
+                <div class="form-check">
+                    <input class="form-check-input bg-dark text-white placeholder-blanco" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Ida
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input bg-dark text-white placeholder-blanco" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Vuelta
+                    </label>
+                </div>
+                <br>
+                <button id="btnSiguienteViaje" class="btn btn-outline-light">Avanzar</button>
+            </div>
+        </div>
+
+
+        <div class="mx-auto p-2 card border border-primary cartaMostrada">
+            <div class="card-body fs-5">
+                <p></p>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-secondary">$</span>
+                    <input id="precioSube" type="number" class="form-control bg-secondary text-white placeholder-blanco" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text bg-secondary">.00</span>                      
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MUESTRA DE RESULTADOS-->
+    <div>
+        <div class="mx-auto p-2 card-resultado border border-success cartaMostrada">
+            <div class="card-body fs-5">
+                <p class="border-bottom border-success">Tu pasaje cuesta</p>
+                <p>Mensual <span id="precioFinalMensual" class="precioResMensual">2000</span>$</p>
+                <hr>
+                <p>Semanal <span id="precioFinalSemanal" class="precioResMensual">500</span>$</p>
+
+
+                <hr>
+
+
+                <table id="miTabla" class="table-dark mx-auto p-2 ">
+                    <thead>
+                        <tr>
+                            <th scope="col">Materia</th>
+                            <th scope="col">Viajes-Ida</th>
+                            <th scope="col">Viajes-Vuelta</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+                        <!-- Las filas se añadirán aquí -->
+                    </tbody>
+                </table>
+                
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <!-- boton siguiente -->
+    <div class="mx-auto p-2 btnsiguiente">
+        <button id="btnAtras" class="btn btn-outline-light">Atras</button>
+        <button id="btnSiguiente" class="btn btn-outline-light">Siguiente</button>
+    </div>
+
+
+    
+
+    <div>
+
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container text-center">
+            <div class="row align-items-start">
+                <div class="col">
+                    Bruno Ruartes
+                </div>
+                <div class="col">
+                    - Calculadora SUBE -
+                </div>
+                <div class="col">
+                    <a href="https://www.instagram.com/brunoruartes/"><img style="width: 3rem;"
+                            src="https://ufixcatamarca.netlify.app/img/logo%20BR.svg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+
+    </script>
+
+</body>
+
+</html>

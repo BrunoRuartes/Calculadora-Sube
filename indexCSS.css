@@ -1,0 +1,89 @@
+.body{
+    background-image: url("https://www.creativefabrica.com/wp-content/uploads/2021/07/27/Geometric-black-abstract-background-Graphics-15165102-1.jpg");
+}
+
+.itemNavBar:hover{
+    color: #0d6efd!important;
+}
+  
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+}
+
+.card{
+    width: 80%;
+    background-color: #49494960!important;
+    text-align: center;
+    color: white!important;
+    box-shadow: 0 0 10px 2px rgba(49, 248, 255, 0.5);
+    backdrop-filter: blur(10px); 
+}
+
+
+
+.placeholder-blanco::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+.placeholder-blanco:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+.placeholder-blanco::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+
+
+
+.btnsiguiente{
+    margin: 2rem!important;
+    width: 80%;
+    text-align: center;
+}
+
+.card-resultado{
+    width: 90%;
+    background-color: #49494960!important;
+    text-align: center;
+    color: white!important;
+    box-shadow: 0 0 10px 2px rgba(49, 255, 94, 0.5);
+    backdrop-filter: blur(10px); 
+}
+
+.precioResMensual{
+    font-size: 3rem;
+    font-weight: bold;
+    color: green;
+}
+
+.footer{
+    background-color: #292929!important;
+    color: rgb(206, 206, 206);
+    margin-top: 4rem;
+    padding-bottom: 5rem;
+    padding: 1rem;
+    border-top:#0d6efd solid 1px;
+}
+
+.fila-final{
+    color: rgb(0, 202, 0);
+}
+
+.transition {
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.transition.show {
+    opacity: 1;
+}
