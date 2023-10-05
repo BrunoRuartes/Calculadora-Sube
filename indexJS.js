@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (tarjetaActual === 3) {
                 // Cambio mensajes
-                document.getElementById('textoInformativo').innerHTML = "Resultado final ";
+                document.getElementById('textoInformativo').innerHTML = "Resultado final <br><hr>";
 
                 document.getElementById('textoInformativoExtra').innerHTML = "Breve resumen";
 
