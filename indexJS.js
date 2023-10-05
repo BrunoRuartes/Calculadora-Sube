@@ -165,6 +165,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
             if (tarjetaActual === 2) {
+                document.getElementById('textoInformativo').innerText = "¿Precio de la sube?";
+                document.getElementById('textoInformativoExtra').innerHTML = "Sin comas ni nada, y en el debido caso, redondear (preferentemente para arriba, asi presupuestás de más y no de menos";
 
             }
 
@@ -216,7 +218,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (tarjetaActual === 3) {
                 // Cambio mensajes
-                document.getElementById('textoInformativo').innerText = "Resultado final";
+                document.getElementById('textoInformativo').innerHTML = "Resultado final ";
+
                 document.getElementById('textoInformativoExtra').innerHTML = "Breve resumen";
 
                 // Actualizo tarjeta de precio mensual y semanal
@@ -294,13 +297,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
             }
 
+            if (tarjetaActual === 4) {
 
+                document.getElementById('btnAtras').disabled = true;
+                document.getElementById('btnSiguiente').disabled = true;
+            }
 
 
 
             // Muestra la nueva tarjeta actual
             tarjetas[tarjetaActual].classList.add('show');
             tarjetas[tarjetaActual].style.display = 'block';
+
         }
 
 
